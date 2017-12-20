@@ -1,0 +1,28 @@
+You can configure Optical editing the file 'settings.txt'
+
+Light source is in the top medium
+
+Index and Multilayers Dir must be 'sons' of root Dir
+
+
+
+OUTPUT FILES:
+
+Reflectance and Trasmittance data are saved in root Dir (where the program is) in file 'RT.Dat'
+
+Internal Absorbance Spectra data are saved in root Dir in file 'A.dat'
+
+Internal Energy Flux Spectra data are saved in root Dir in file 'Flux.dat'
+
+Internal Energy Flux Depth Profile data are saved in root Dir in file 'FluxProf.dat'
+
+EMA data are saved in index Dir in file 'EMA.in3'
+
+Alpha data are saved in root Dir in file 'Alpha.dat'
+
+Index file calculated from Alpha is saved in index Dir in file 'Alpha.in3'
+
+Psi Delta and Pseudodielectric function is saved in root Dir in file 'PsiDelta.dat'
+
+
+

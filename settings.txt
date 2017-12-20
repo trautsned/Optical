@@ -1,0 +1,40 @@
+#Optical, Copyright (C) 2005  Emanuele Centurioni
+#see Optical.py
+#This is the configuration file
+#
+#default x scale of the plot
+xmin,0
+xmax,11000
+#
+#borders of the plot %
+xborder,5
+yborder,5
+#
+#Number of points used in the plot
+PlotPoints,400
+#
+#relative path to directory containing structures files
+StructureDir,structures
+#
+#relative path to directory containing refraction index files
+IndexDir,n
+#
+#Absolute path to directory containing experimental files
+ExpDir,/home/emanuele/python/Boa/Optical/experiments
+#
+#accuracy of experimental data (R and T), 
+#needed for ChiSquare calculation,expressed in full scale %
+#i.e. if StDev=2.0 and T is expressed in % then 
+#(Texp - 2.0) < actual T < (Texp + 2.0)
+StDev,1.0
+#
+#default incidence angle (deg)
+Fi,0.0
+#
+#in absorption coefficient calculation 
+#data is rejected for T lower than this value
+#lowT is expressed in %
+lowT,1.0
+#
+#Show new functions under test (True,False)
+test,False

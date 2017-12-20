@@ -1,0 +1,61 @@
+Version 0.1.8 (15 December 2008)
+
+Added in file settings.txt "show new function under test".
+Added several interface roughness models, see file interface.txt.
+Added eV and cm-1 visualization in addition to wavelength.
+
+
+
+
+Version 0.1.7 (3 October 2006)
+
+Added in file settings.txt default incidence angle and 
+lower transmission limit for absorption calculation.
+Now the model for rough interfaces works for any incidence angle.
+
+
+
+
+Version 0.1.6 (19 April 2006)
+
+Added the possibility to define the rms roughness of the interfaces.
+So far it works only for normal incidence.
+If rough interfaces are used then only the specular components of 
+R, T, A etc. are computed.
+
+
+
+
+Version 0.1.5 (9 November 2005)
+
+Some minor bugs have been fixed
+
+
+
+
+Version 0.1.4 (30 June 2005)
+
+Added Psi and Delta calculation (Pseudo Dielectric Function)
+
+Now clicking on the plot one gets x and y coordinates (wavelength and %)
+
+
+
+
+Version 0.1.3 (25 May 2005)
+
+in file settings.txt the field separator has changed, now the comma is used. 
+This was necessary to allow path including spaces.
+
+Added the absorption coefficient (Alpha) calculation and the 
+energy Gap evaluation (Tauc's Plot).
+
+Added the Energy Flux Profile calculation.
+
+
+
+
+Version 0.1.2 (5 May 2005)
+
+First public release
+
