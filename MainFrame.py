@@ -50,38 +50,38 @@ class MainFrame(wx.Frame):
     def _init_coll_mnuIndex_Items(self, parent):
         # generated method, don't edit
 
-        parent.Append(help='', id=wxID_MAINFRAMEMNUINDEXPLOTINDEX,
-              kind=wx.ITEM_NORMAL, text=u'Plot Index')
+        parent.Append(wxID_MAINFRAMEMNUINDEXPLOTINDEX,
+              'Plot Index')
         self.Bind(wx.EVT_MENU, self.OnMnuIndexPlotindexMenu,
               id=wxID_MAINFRAMEMNUINDEXPLOTINDEX)
 
     def _init_coll_menuBar1_Menus(self, parent):
         # generated method, don't edit
 
-        parent.Append(menu=self.mnuFile, title=u'File')
-        parent.Append(menu=self.mnuIndex, title=u'Index')
-        parent.Append(menu=self.mnuSettings, title=u'Settings')
-        parent.Append(menu=self.mnuHelp, title=u'Help')
+        parent.Append(menu=self.mnuFile, title='File')
+        parent.Append(menu=self.mnuIndex, title='Index')
+        parent.Append(menu=self.mnuSettings, title='Settings')
+        parent.Append(menu=self.mnuHelp, title='Help')
 
     def _init_coll_mnuFile_Items(self, parent):
         # generated method, don't edit
 
-        parent.Append(help='', id=wxID_MAINFRAMEMNUFILENEWSTRUCT,
-              kind=wx.ITEM_NORMAL, text=u'New Multilayer')
-        parent.Append(help='', id=wxID_MAINFRAMEMNUFILEOPENSTRUCT,
-              kind=wx.ITEM_NORMAL, text=u'Open Multilayer')
-        parent.Append(help='', id=wxID_MAINFRAMEMNUFILESAVESTRUCT,
-              kind=wx.ITEM_NORMAL, text=u'Save Multilayer')
-        parent.Append(help='', id=wxID_MAINFRAMEMNUFILESAVESTRUCTAS,
-              kind=wx.ITEM_NORMAL, text=u'Save Multilayer As ...')
-        parent.Append(help='', id=wxID_MAINFRAMEMNUFILECLOSESTRUCTURE,
-              kind=wx.ITEM_NORMAL, text=u'Close Multilayer')
-        parent.Append(help='', id=wxID_MAINFRAMEMNUFILELOADEXP,
-              kind=wx.ITEM_NORMAL, text=u'Load Experimental Data')
-        parent.Append(help='', id=wxID_MAINFRAMEMNUFILECLOSEEXP,
-              kind=wx.ITEM_NORMAL, text=u'Close Experimental Data')
-        parent.Append(help='', id=wxID_MAINFRAMEMNUFILEEXIT,
-              kind=wx.ITEM_NORMAL, text=u'Exit')
+        parent.Append(wxID_MAINFRAMEMNUFILENEWSTRUCT,
+              'New Multilayer')
+        parent.Append(wxID_MAINFRAMEMNUFILEOPENSTRUCT,
+              'Open Multilayer')
+        parent.Append(wxID_MAINFRAMEMNUFILESAVESTRUCT,
+              'Save Multilayer')
+        parent.Append(wxID_MAINFRAMEMNUFILESAVESTRUCTAS,
+              'Save Multilayer As ...')
+        parent.Append(wxID_MAINFRAMEMNUFILECLOSESTRUCTURE,
+              'Close Multilayer')
+        parent.Append(wxID_MAINFRAMEMNUFILELOADEXP,
+              'Load Experimental Data')
+        parent.Append(wxID_MAINFRAMEMNUFILECLOSEEXP,
+              'Close Experimental Data')
+        parent.Append(wxID_MAINFRAMEMNUFILEEXIT,
+              'Exit')
         self.Bind(wx.EVT_MENU, self.OnMnuFileNewstructMenu,
               id=wxID_MAINFRAMEMNUFILENEWSTRUCT)
         self.Bind(wx.EVT_MENU, self.OnMnuFileOpenstructMenu,
@@ -102,18 +102,18 @@ class MainFrame(wx.Frame):
     def _init_coll_mnuSettings_Items(self, parent):
         # generated method, don't edit
 
-        parent.Append(help='', id=wxID_MAINFRAMEMNUSETTINGSSETGRAPHSCALE,
-              kind=wx.ITEM_NORMAL, text=u'Set Graph Scale')
+        parent.Append(wxID_MAINFRAMEMNUSETTINGSSETGRAPHSCALE,
+              'Set Graph Scale')
         self.Bind(wx.EVT_MENU, self.OnMnuSettingsSetgraphscaleMenu,
               id=wxID_MAINFRAMEMNUSETTINGSSETGRAPHSCALE)
 
     def _init_coll_mnuHelp_Items(self, parent):
         # generated method, don't edit
 
-        parent.Append(help='', id=wxID_MAINFRAMEMNUHELPHELP,
-              kind=wx.ITEM_NORMAL, text=u'Help')
-        parent.Append(help='', id=wxID_MAINFRAMEMNUHELPABOUT,
-              kind=wx.ITEM_NORMAL, text=u'About')
+        parent.Append(wxID_MAINFRAMEMNUHELPHELP,
+              'Help')
+        parent.Append(wxID_MAINFRAMEMNUHELPABOUT,
+              'About')
         self.Bind(wx.EVT_MENU, self.OnMnuHelpHelpMenu,
               id=wxID_MAINFRAMEMNUHELPHELP)
         self.Bind(wx.EVT_MENU, self.OnMnuHelpAboutMenu,
@@ -121,7 +121,7 @@ class MainFrame(wx.Frame):
 
     def _init_utils(self):
         # generated method, don't edit
-        self.mnuFile = wx.Menu(title=u'')
+        self.mnuFile = wx.Menu(title='')
 
         self.mnuIndex = wx.Menu(title='')
 
@@ -139,9 +139,9 @@ class MainFrame(wx.Frame):
 
     def _init_ctrls(self, prnt):
         # generated method, don't edit
-        wx.Frame.__init__(self, id=wxID_MAINFRAME, name=u'MainFrame',
+        wx.Frame.__init__(self, id=wxID_MAINFRAME, name='MainFrame',
               parent=prnt, pos=wx.Point(216, 66), size=wx.Size(800, 600),
-              style=wx.DEFAULT_FRAME_STYLE, title=u'Optical')
+              style=wx.DEFAULT_FRAME_STYLE, title='Optical')
         self._init_utils()
         self.SetClientSize(wx.Size(800, 600))
         self.SetMenuBar(self.menuBar1)
@@ -150,61 +150,61 @@ class MainFrame(wx.Frame):
         self.Bind(wx.EVT_CLOSE, self.OnMainFrameClose)
 
         self.btnEditStr = wx.Button(id=wxID_MAINFRAMEBTNEDITSTR,
-              label=u'Edit M', name=u'btnEditStr', parent=self, pos=wx.Point(16,
+              label='Edit M', name='btnEditStr', parent=self, pos=wx.Point(16,
               192), size=wx.Size(85, 32), style=0)
         self.btnEditStr.Bind(wx.EVT_BUTTON, self.OnBtnEditStrButton,
               id=wxID_MAINFRAMEBTNEDITSTR)
 
-        self.btnAlpha = wx.Button(id=wxID_MAINFRAMEBTNALPHA, label=u'Alpha',
-              name=u'btnAlpha', parent=self, pos=wx.Point(16, 288),
+        self.btnAlpha = wx.Button(id=wxID_MAINFRAMEBTNALPHA, label='Alpha',
+              name='btnAlpha', parent=self, pos=wx.Point(16, 288),
               size=wx.Size(85, 32), style=0)
         self.btnAlpha.Bind(wx.EVT_BUTTON, self.OnBtnAlphaButton,
               id=wxID_MAINFRAMEBTNALPHA)
 
         self.btnEFluxProfile = wx.Button(id=wxID_MAINFRAMEBTNEFLUXPROFILE,
-              label=u'Flux Prof', name=u'btnEFluxProfile', parent=self,
+              label='Flux Prof', name='btnEFluxProfile', parent=self,
               pos=wx.Point(16, 384), size=wx.Size(85, 32), style=0)
         self.btnEFluxProfile.Bind(wx.EVT_BUTTON, self.OnBtnEFluxProfileButton,
               id=wxID_MAINFRAMEBTNEFLUXPROFILE)
 
         self.btnPsiDelta = wx.Button(id=wxID_MAINFRAMEBTNPSIDELTA,
-              label=u'PsiDelta', name=u'btnPsiDelta', parent=self,
+              label='PsiDelta', name='btnPsiDelta', parent=self,
               pos=wx.Point(16, 488), size=wx.Size(85, 32), style=0)
         self.btnPsiDelta.Bind(wx.EVT_BUTTON, self.OnBtnPsiDeltaButton,
               id=wxID_MAINFRAMEBTNPSIDELTA)
 
-        self.btnQE = wx.Button(id=wxID_MAINFRAMEBTNQE, label=u'QE',
-              name=u'btnQE', parent=self, pos=wx.Point(16, 528),
+        self.btnQE = wx.Button(id=wxID_MAINFRAMEBTNQE, label='QE',
+              name='btnQE', parent=self, pos=wx.Point(16, 528),
               size=wx.Size(85, 32), style=0)
         self.btnQE.Bind(wx.EVT_BUTTON, self.OnBtnQEButton,
               id=wxID_MAINFRAMEBTNQE)
 
         self.btnThickness = wx.Button(id=wxID_MAINFRAMEBTNTHICKNESS,
-              label=u'Thick det', name=u'btnThickness', parent=self,
+              label='Thick det', name='btnThickness', parent=self,
               pos=wx.Point(136, 288), size=wx.Size(85, 32), style=0)
         self.btnThickness.Bind(wx.EVT_BUTTON, self.OnBtnThicknessButton,
               id=wxID_MAINFRAMEBTNTHICKNESS)
 
-        self.btnChi = wx.Button(id=wxID_MAINFRAMEBTNCHI, label=u'Chi test',
-              name=u'btnChi', parent=self, pos=wx.Point(136, 328),
+        self.btnChi = wx.Button(id=wxID_MAINFRAMEBTNCHI, label='Chi test',
+              name='btnChi', parent=self, pos=wx.Point(136, 328),
               size=wx.Size(85, 32), style=0)
         self.btnChi.Bind(wx.EVT_BUTTON, self.OnBtnChiButton,
               id=wxID_MAINFRAMEBTNCHI)
 
-        self.btnEFlux = wx.Button(id=wxID_MAINFRAMEBTNEFLUX, label=u'E Flux',
-              name=u'btnEFlux', parent=self, pos=wx.Point(136, 384),
+        self.btnEFlux = wx.Button(id=wxID_MAINFRAMEBTNEFLUX, label='E Flux',
+              name='btnEFlux', parent=self, pos=wx.Point(136, 384),
               size=wx.Size(85, 32), style=0)
         self.btnEFlux.Bind(wx.EVT_BUTTON, self.OnBtnEFluxButton,
               id=wxID_MAINFRAMEBTNEFLUX)
 
         self.btnCompute = wx.Button(id=wxID_MAINFRAMEBTNCOMPUTE,
-              label=u'Compute', name=u'btnCompute', parent=self,
+              label='Compute', name='btnCompute', parent=self,
               pos=wx.Point(136, 448), size=wx.Size(85, 32), style=0)
         self.btnCompute.Bind(wx.EVT_BUTTON, self.OnBtnComputeButton,
               id=wxID_MAINFRAMEBTNCOMPUTE)
 
-        self.btnClear = wx.Button(id=wxID_MAINFRAMEBTNCLEAR, label=u'Clear',
-              name=u'btnClear', parent=self, pos=wx.Point(136, 488),
+        self.btnClear = wx.Button(id=wxID_MAINFRAMEBTNCLEAR, label='Clear',
+              name='btnClear', parent=self, pos=wx.Point(136, 488),
               size=wx.Size(85, 32), style=0)
         self.btnClear.Bind(wx.EVT_BUTTON, self.OnBtnClearButton,
               id=wxID_MAINFRAMEBTNCLEAR)
@@ -213,71 +213,71 @@ class MainFrame(wx.Frame):
               parent=self, pos=wx.Point(232, 0), size=wx.Size(552, 480),
               style=0)
         self.window1.SetBackgroundColour(wx.Colour(255, 255, 255))
-        self.window1.SetHelpText(u'prova')
+        self.window1.SetHelpText('prova')
         self.window1.Enable(True)
         self.window1.SetBackgroundStyle(wx.BG_STYLE_SYSTEM)
         self.window1.Bind(wx.EVT_PAINT, self.OnWindow1Paint)
         self.window1.Bind(wx.EVT_LEFT_DOWN, self.OnWindow1LeftDown)
 
-        self.chkA = wx.CheckBox(id=wxID_MAINFRAMECHKA, label=u'Show A',
-              name=u'chkA', parent=self, pos=wx.Point(136, 8), size=wx.Size(91,
+        self.chkA = wx.CheckBox(id=wxID_MAINFRAMECHKA, label='Show A',
+              name='chkA', parent=self, pos=wx.Point(136, 8), size=wx.Size(91,
               21), style=0)
         self.chkA.SetValue(False)
 
-        self.chkT = wx.CheckBox(id=wxID_MAINFRAMECHKT, label=u'Show T',
-              name=u'chkT', parent=self, pos=wx.Point(136, 40), size=wx.Size(91,
+        self.chkT = wx.CheckBox(id=wxID_MAINFRAMECHKT, label='Show T',
+              name='chkT', parent=self, pos=wx.Point(136, 40), size=wx.Size(91,
               21), style=0)
         self.chkT.SetValue(True)
 
-        self.chkR = wx.CheckBox(id=wxID_MAINFRAMECHKR, label=u'Show R',
-              name=u'chkR', parent=self, pos=wx.Point(136, 80), size=wx.Size(91,
+        self.chkR = wx.CheckBox(id=wxID_MAINFRAMECHKR, label='Show R',
+              name='chkR', parent=self, pos=wx.Point(136, 80), size=wx.Size(91,
               21), style=0)
         self.chkR.SetValue(True)
 
-        self.txtRTA = wx.TextCtrl(id=wxID_MAINFRAMETXTRTA, name=u'txtRTA',
+        self.txtRTA = wx.TextCtrl(id=wxID_MAINFRAMETXTRTA, name='txtRTA',
               parent=self, pos=wx.Point(144, 232), size=wx.Size(80, 27),
-              style=0, value=u'')
+              style=0, value='')
 
         self.txtWavelength = wx.TextCtrl(id=wxID_MAINFRAMETXTWAVELENGTH,
-              name=u'txtWavelength', parent=self, pos=wx.Point(448, 512),
-              size=wx.Size(80, 27), style=0, value=u'')
+              name='txtWavelength', parent=self, pos=wx.Point(448, 512),
+              size=wx.Size(80, 27), style=0, value='')
 
-        self.txtFi = wx.TextCtrl(id=wxID_MAINFRAMETXTFI, name=u'txtFi',
+        self.txtFi = wx.TextCtrl(id=wxID_MAINFRAMETXTFI, name='txtFi',
               parent=self, pos=wx.Point(712, 512), size=wx.Size(80, 27),
-              style=0, value=u'')
+              style=0, value='')
 
         self.staticText1 = wx.StaticText(id=wxID_MAINFRAMESTATICTEXT1,
-              label=u'Wavelength (A)', name='staticText1', parent=self,
+              label='Wavelength (A)', name='staticText1', parent=self,
               pos=wx.Point(440, 488), size=wx.Size(113, 17), style=0)
 
         self.staticText2 = wx.StaticText(id=wxID_MAINFRAMESTATICTEXT2,
-              label=u'(%)', name='staticText2', parent=self, pos=wx.Point(170,
+              label='(%)', name='staticText2', parent=self, pos=wx.Point(170,
               210), size=wx.Size(22, 17), style=0)
 
         self.staticText3 = wx.StaticText(id=wxID_MAINFRAMESTATICTEXT3,
-              label=u'Angle (deg)', name='staticText3', parent=self,
+              label='Angle (deg)', name='staticText3', parent=self,
               pos=wx.Point(715, 490), size=wx.Size(74, 17), style=0)
 
-        self.btnBlack = wx.Button(id=wxID_MAINFRAMEBTNBLACK, label=u'Black',
-              name=u'btnBlack', parent=self, pos=wx.Point(136, 528),
+        self.btnBlack = wx.Button(id=wxID_MAINFRAMEBTNBLACK, label='Black',
+              name='btnBlack', parent=self, pos=wx.Point(136, 528),
               size=wx.Size(85, 30), style=0)
         self.btnBlack.Bind(wx.EVT_BUTTON, self.OnBtnBlackButton,
               id=wxID_MAINFRAMEBTNBLACK)
 
-        self.txteV = wx.TextCtrl(id=wxID_MAINFRAMETXTEV, name=u'txteV',
+        self.txteV = wx.TextCtrl(id=wxID_MAINFRAMETXTEV, name='txteV',
               parent=self, pos=wx.Point(328, 512), size=wx.Size(80, 25),
-              style=0, value=u'')
+              style=0, value='')
 
-        self.txtcm1 = wx.TextCtrl(id=wxID_MAINFRAMETXTCM1, name=u'txtcm1',
+        self.txtcm1 = wx.TextCtrl(id=wxID_MAINFRAMETXTCM1, name='txtcm1',
               parent=self, pos=wx.Point(560, 512), size=wx.Size(80, 25),
-              style=0, value=u'')
+              style=0, value='')
 
-        self.stxteV = wx.StaticText(id=wxID_MAINFRAMESTXTEV, label=u'eV',
-              name=u'stxteV', parent=self, pos=wx.Point(360, 488),
+        self.stxteV = wx.StaticText(id=wxID_MAINFRAMESTXTEV, label='eV',
+              name='stxteV', parent=self, pos=wx.Point(360, 488),
               size=wx.Size(17, 17), style=0)
 
-        self.stxtcm1 = wx.StaticText(id=wxID_MAINFRAMESTXTCM1, label=u'cm-1',
-              name=u'stxtcm1', parent=self, pos=wx.Point(585, 488),
+        self.stxtcm1 = wx.StaticText(id=wxID_MAINFRAMESTXTCM1, label='cm-1',
+              name='stxtcm1', parent=self, pos=wx.Point(585, 488),
               size=wx.Size(33, 17), style=0)
 
     def __init__(self, parent):
@@ -358,7 +358,7 @@ class MainFrame(wx.Frame):
         self.Experiment=[]
 
         #list of colors to be used in plotting
-        self.color=[wx.RED,wx.BLUE,wx.GREEN]
+        self.color = [wx.RED, wx.BLUE, wx.GREEN]
         self.ncolor=-1
         
         #used to handle cancel actions
@@ -422,17 +422,17 @@ class MainFrame(wx.Frame):
         a=a+self.yborder*self.window1.he/100.0
         return int(round(a))
 
-    def UpdatePlot(self):        
+    def UpdatePlot(self):
         dc = wx.ClientDC(self.window1)
-        dc.BeginDrawing()
+        #dc.BeginDrawing() removed for wx phoenix
         dc.DrawBitmap(self.window1.BufferBmp, 0, 0, True)
-        dc.EndDrawing()
+        #dc.EndDrawing()
         
     def PlotAxis(self):
         dc = wx.MemoryDC()
         dc.SelectObject(self.window1.BufferBmp)
         dc.Clear()
-        dc.BeginDrawing()
+        #dc.BeginDrawing() removed for wx phoenix
         dc.SetPen(wx.Pen(wx.BLACK, 1, wx.SOLID))
         
         xmin,xmax=self.window1.xmin,self.window1.xmax
@@ -456,12 +456,12 @@ class MainFrame(wx.Frame):
         for y in range(0, 101, 20):
             dc.DrawLine(self.XX(xmin),self.YY(y/100.0),self.XX(xmax),self.YY(y/100.0))
             dc.DrawText(str(y), self.XX(xmin-offset),self.YY(y/100.0))
-        dc.EndDrawing()
+        #dc.EndDrawing() removed for wx phoenix
 
     def CheckIfSaved(self):
         if self.StructureSaved==False:
-            dlg = wx.SingleChoiceDialog(self, 
-            "The current Multilayer has been modified.\nDo you want to save your changes ?", 
+            dlg = wx.SingleChoiceDialog(self,
+            "The current Multilayer has been modified.\nDo you want to save your changes ?",
             'Question', ["Yes","No"])
             try:
                 if dlg.ShowModal() == wx.ID_OK:
@@ -484,15 +484,15 @@ class MainFrame(wx.Frame):
                 R.append(self.Experiment[i][1])
                 T.append(self.Experiment[i][2])
 
-            color=wx.BLACK
-            self.PlotData(lam,R,T,color,color,color)
+            # color=wx.BLACK
+            # self.PlotData(lam,R,T,color,color,color)
 
     def ShowChi(self):
         text=""
         for i in range(len(self.ChiHist)):
             text=text+str(self.ChiHist[i])+"\n"
         caption="Chi Square Test       Assuming experimental accuracy = +- "+str(self.StDev*100)+"% of full scale"
-        
+
         dlg = wx.MessageDialog(self, text,
         caption, wx.OK | wx.ICON_INFORMATION)
         try:
@@ -532,7 +532,7 @@ class MainFrame(wx.Frame):
     def PlotData(self,lam,R,T,RColor,TColor,AColor):
         dc = wx.MemoryDC()
         dc.SelectObject(self.window1.BufferBmp)
-        dc.BeginDrawing()
+        #dc.BeginDrawing()
 
         for i in range(len(lam)):
             if i>0:
@@ -548,7 +548,7 @@ class MainFrame(wx.Frame):
             lamold=lam[i]
             Told=T[i]
             Rold=R[i]
-        dc.EndDrawing()
+        #dc.EndDrawing()
 
     def PlotSingleData(self,lam,T,TColor):
         dc = wx.MemoryDC()
@@ -580,7 +580,7 @@ class MainFrame(wx.Frame):
     def OnMnuFileOpenstructMenu(self, event):
         self.CheckIfSaved()
         if self.Cancel==False:
-            dlg = wx.FileDialog(self, "Open Multilayer", self.CurDir+"/"+self.StructureDir, path.split(self.StructureFilename)[1], "str files (*.str)|*.str|" "All files (*.*)|*.*", wx.OPEN)
+            dlg = wx.FileDialog(self, "Open Multilayer", self.CurDir+"/"+self.StructureDir, path.split(self.StructureFilename)[1], "str files (*.str)|*.str|" "All files (*.*)|*.*", wx.FD_OPEN)
             try:
                 if dlg.ShowModal() == wx.ID_OK:
                     self.ClearStructure()
@@ -601,7 +601,7 @@ class MainFrame(wx.Frame):
             dlg.Destroy()
 
     def OnMnuFileSavestructMenu(self, event):
-        if self.StructureFilename <> "Untitled":
+        if self.StructureFilename != "Untitled":
             SaveStructure(self.StructureFilename,self.StructureName,self.Structure)
             self.StructureSaved=True
         else:
@@ -648,7 +648,7 @@ class MainFrame(wx.Frame):
             wildcard = "(*.dat)|*.dat|" \
             "(*.wav)|*.wav|" "(*.csv)|*.csv|" "All files (*.*)|*.*"
             dlg = wx.FileDialog(self, "Open Experiment", self.ExpDir, "", wildcard,
-                       wx.OPEN| wx.MULTIPLE)
+                       wx.FD_OPEN| wx.FD_MULTIPLE)
             if dlg.ShowModal() == wx.ID_OK:
                 Filename=dlg.GetPath()
                 self.ExperimentFilename=Filename
@@ -670,7 +670,7 @@ class MainFrame(wx.Frame):
             self.Destroy()
 
     def OnMnuIndexPlotindexMenu(self, event):
-            dlg = wx.FileDialog(self, "Open Index File", self.CurDir+"/"+self.IndexDir, "", "*.in3", wx.OPEN)
+            dlg = wx.FileDialog(self, "Open Index File", self.CurDir+"/"+self.IndexDir, "", "*.in3", wx.FD_OPEN)
             try:
                 if dlg.ShowModal() == wx.ID_OK:
                     Filename=dlg.GetPath()
@@ -725,16 +725,16 @@ class MainFrame(wx.Frame):
 
     def OnWindow1Paint(self, event):
         dc = wx.PaintDC(self.window1)
-        dc.BeginDrawing()
+        #dc.BeginDrawing() removed for wx phoenix
         if self.window1.BufferBmp != None:
             dc.DrawBitmap(self.window1.BufferBmp, 0, 0, True)
         else:
             pass
-        dc.EndDrawing()
+        #dc.EndDrawing() removed for wx phoenix
 
     def OnWindow1LeftDown(self, event):
         #when clicking on the plot returns coordinates
-        self.x, self.y = event.GetPositionTuple()
+        self.x, self.y = event.GetPosition()
         a=self.x
         a=a-self.xborder*self.window1.wi/100.0
         a=a/(100-2*self.xborder)*100.0

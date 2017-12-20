@@ -165,7 +165,7 @@ def incohescatmatr(structure,lam,NSinFi,pol):
             S,T,R,Null1,Null2=scatmatr(structure[start:i+1],lam,NSinFi,pol)
             GS.append(modmatr(S))
             start=i
-            if i <> (len(structure)-1):
+            if i != (len(structure)-1):
                 #calculates the incoherent layer matrix
                 N=structure[i][1]
                 d=structure[i][0]
@@ -239,7 +239,7 @@ def EFLUX(structure, lam, NSinFi, j, x, pol):
     c=0
     test=False
     for i in range(j+1):
-       if structure[i][2]<>test:
+       if structure[i][2]!=test:
            c=c+1
            test=structure[i][2]
        elif structure[i][2]==True:

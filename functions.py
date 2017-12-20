@@ -199,7 +199,7 @@ def sortRemoveDupes(lst):
     return lst
 
 def EMA3(n, fr):
-    #effective medium approximation 3 medium 
+    #effective medium approximation 3 medium
     e1,e2,e3=n[0]**2,n[1]**2,n[2]**2
     f1,f2,f3=fr[0]/100.0,fr[1]/100.0,fr[2]/100.0
     nguess=f1*n[0]+f2*n[1]+f3*n[2]
