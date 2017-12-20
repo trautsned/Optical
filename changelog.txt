@@ -1,3 +1,6 @@
+Version 0.1.9 (20 December 2017)
+Updated to work with Python 3 and wxPython 4.0
+
 Version 0.1.8 (15 December 2008)
 
 Added in file settings.txt "show new function under test".
