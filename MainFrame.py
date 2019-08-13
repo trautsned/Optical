@@ -288,7 +288,7 @@ class MainFrame(wx.Frame):
 
         #version of the software
         #self.Version=settings[settings.index("version")+1]
-        self.Version="0.1.8"
+        self.Version="0.1.9"
         
         #set relative path to directory containig structures
         StructureDir=settings[settings.index("StructureDir")+1]
@@ -320,10 +320,10 @@ class MainFrame(wx.Frame):
         self.PlotPoints=PlotPoints
         
         # Get the size of the drawing area in pixels.
-        self.window1.wi, self.window1.he = self.window1.GetSizeTuple()
+        self.window1.wi, self.window1.he = self.window1.GetSize()
 
         # Create BufferBmp and set the same size as the drawing area.
-        self.window1.BufferBmp = wx.EmptyBitmap(self.window1.wi, self.window1.he)
+        self.window1.BufferBmp = wx.Bitmap(self.window1.wi, self.window1.he)
 
         # borders of the plot %
         xborder=float(settings[settings.index("xborder")+1])
@@ -553,7 +553,7 @@ class MainFrame(wx.Frame):
     def PlotSingleData(self,lam,T,TColor):
         dc = wx.MemoryDC()
         dc.SelectObject(self.window1.BufferBmp)
-        dc.BeginDrawing()
+        #dc.BeginDrawing() does nothing in WX4.0
         dc.SetPen(wx.Pen(TColor, 3, wx.SOLID))
 
         for i in range(len(lam)):
@@ -561,7 +561,7 @@ class MainFrame(wx.Frame):
                 dc.DrawLine(self.XX(lamold),self.YY(Told),self.XX(lam[i]),self.YY(T[i]))
             lamold=lam[i]
             Told=T[i]
-        dc.EndDrawing()
+        #dc.EndDrawing() does nothing in WX4.0
 
     def OnMnuFileNewstructMenu(self, event):
         self.CheckIfSaved()
@@ -609,7 +609,7 @@ class MainFrame(wx.Frame):
 
     def OnMnuFileSavestructasMenu(self, event):
         if len(self.Structure) > 1:
-            dlg = wx.FileDialog(self, "Save Multilayer As", self.CurDir+"/"+self.StructureDir, "", "str files (*.str)|*.str|" "All files (*.*)|*.*", wx.SAVE)
+            dlg = wx.FileDialog(self, "Save Multilayer As", self.CurDir+"/"+self.StructureDir, "", "str files (*.str)|*.str|" "All files (*.*)|*.*", wx.FD_SAVE)
             try:
                 if dlg.ShowModal() == wx.ID_OK:
                     filename = dlg.GetPath()

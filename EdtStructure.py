@@ -212,7 +212,7 @@ class EdtStructure(wx.Dialog):
         self.UpdateFields(j)
         
     def OnBtnBrowse3Button(self, event):
-        dlg = wx.FileDialog(self, "Choose a file", self.CurDir+"/"+self.IndexDir, "", "*.in3", wx.OPEN)
+        dlg = wx.FileDialog(self, "Choose a file", self.CurDir+"/"+self.IndexDir, "", "*.in3", wx.FD_OPEN)
         try:
             if dlg.ShowModal() == wx.ID_OK:
                 filename = dlg.GetPath()
@@ -226,7 +226,7 @@ class EdtStructure(wx.Dialog):
             dlg.Destroy()
 
     def OnBtnBrowse2Button(self, event):
-        dlg = wx.FileDialog(self, "Choose a file", self.CurDir+"/"+self.IndexDir, "", "*.in3", wx.OPEN)
+        dlg = wx.FileDialog(self, "Choose a file", self.CurDir+"/"+self.IndexDir, "", "*.in3", wx.FD_OPEN)
         try:
             if dlg.ShowModal() == wx.ID_OK:
                 filename = dlg.GetPath()
@@ -240,7 +240,7 @@ class EdtStructure(wx.Dialog):
             dlg.Destroy()
 
     def OnBtnBrowse1Button(self, event):
-        dlg = wx.FileDialog(self, "Choose a file", self.CurDir+"/"+self.IndexDir, "", "*.in3", wx.OPEN)
+        dlg = wx.FileDialog(self, "Choose a file", self.CurDir+"/"+self.IndexDir, "", "*.in3", wx.FD_OPEN)
         try:
             if dlg.ShowModal() == wx.ID_OK:
                 filename = dlg.GetPath()
